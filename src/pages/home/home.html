@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank - Sistema de camara
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-card>
+    <ion-card-header>
+      PLUGIN CAMARA
+    </ion-card-header>
+    <ion-card-content>
+      <button ion-button color="danger" icon-right block (click)="tomaFoto();">
+        Tomar Foto
+        <ion-icon name="camera"></ion-icon>
+      </button>
+
+      <img [src]="base64Image">
+    </ion-card-content>
+  </ion-card>
+    
+  
+</ion-content>
